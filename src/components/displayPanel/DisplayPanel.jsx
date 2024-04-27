@@ -16,8 +16,8 @@ const DisplayPanel = () => {
           <h2 className=" text-4xl font-bold">Connected Account</h2>
           <p className="text-center mt-3 text-2xl">Unsupported</p>
         </div>
-      </div>
-
+      </div> 
+ 
       <div className="flex justify-around px-40 mt-20">
         <StakeAmount/>
         <RewardRate />
