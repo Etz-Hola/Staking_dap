@@ -21,7 +21,7 @@ const DisplayPanel = () => {
       <div className="flex justify-around px-40 mt-20">
         <StakeAmount/> 
         <RewardRate /> 
-        <EarnedReward />
+        <EarnedReward /> 
 
 
       </div>

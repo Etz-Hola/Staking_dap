@@ -5,7 +5,7 @@ const EarnedReward = () => {
     <div className='' >
         <h1 className='font-bold text-4xl'>Earned <br /> Reward:</h1>
         <p className="text-center mt-3 text-2xl">0</p>
-    </div>
+    </div> 
   )
 }
 
