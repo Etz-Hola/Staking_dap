@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react' 
 
-const StakeAmount = () => {
+const StakeAmount = () => { 
   return (
     <div className='' > 
         <h1 className='font-bold text-4xl'>Stake <br /> Amount:</h1>
