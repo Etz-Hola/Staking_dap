@@ -17,5 +17,19 @@ contract Staking is ReentrancyGuard {
     mapping(address=>uint) public rewards;
     mapping(address=>uint) public userRewardPerTokenPaid;
 
+    event Staked(address indexed user, uint256 indexed amount);
+    event Withdrawn(address indexed user, uint256 indexed amount);
+    event RewardsClaimed(address indexed user, uint256 indexed amount);
+
+    constructor(address stakingToken, address rewardToken) {
+        // IERC20 public s_stakingToken;
+        // IERC20 public s_rewardToken;
+
+        s_stakingToken=IERC20(stakingToken);
+        s_rewardToken=IERC20(rewardToken);        
+    }
+    function rewardPerToken() public view return(uint) {
+        
+    }
 
 }
