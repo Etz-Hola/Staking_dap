@@ -14,7 +14,7 @@ contract Lock {
     function setter() public {
         storeData = x;
     }
-}
+
     function getter() public view returns {
         return storeData
     }
