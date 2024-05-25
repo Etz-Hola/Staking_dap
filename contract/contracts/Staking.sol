@@ -28,8 +28,15 @@ contract Staking is ReentrancyGuard {
         s_stakingToken=IERC20(stakingToken);
         s_rewardToken=IERC20(rewardToken);        
     }
-    function rewardPerToken() public view return(uint) {
-        
+    function rewardPerToken() public view returns(uint) {
+
+        if(totalStakedTokens == 0) {
+            return rewardPerTokenStored;
+        }
+        uint totalTime = block.timestamp - lastUpdateTime;
+        uint totalRewards = REWARD_RATE *totalTime;
+        return rewardPerTokenStored + totalRewards / totalStakedTokens;
+
     }
 
 }
