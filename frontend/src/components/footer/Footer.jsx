@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className='bg-slate-950 p-10 mt-10'>
-        <button className='bg-white p-3 rounded-lg'>Claim ypur Reward</button>
+        <button className='bg-white p-3 rounded-lg'>Claim your Reward</button>
 
         <div className='text-center'>
         <button className='bg-white p-2 rounded-lg'>Connect Wallet</button>
@@ -12,5 +12,4 @@ const Footer = () => {
     </div>
   )
 }
-
 export default Footer
