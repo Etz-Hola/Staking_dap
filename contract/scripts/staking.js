@@ -4,7 +4,7 @@ async function main() {
   const Staking = await hre.ethers.getContractFactory("Staking");
   const staking = await Staking.deploy();
 
-  console.log("StakeToken contract deploy to:", staking.address);
+  console.log("Staking contract deploy to:", staking.address);
 }
 
 main().then(() => process.exit(0))
