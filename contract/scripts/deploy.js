@@ -4,7 +4,7 @@ async function main() {
   const StakeToken = await hre.ethers.getContractFactory("StakeToken");
   const stakeToken = await StakeToken.deploy(1000);
 
-  console.log("StakeToken contract deploy to:", stakeToken.address);
+  console.log("StakeToken contract deploy to:", stakeToken.target);
 }
 
 main().then(() => process.exit(0))
